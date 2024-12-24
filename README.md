@@ -14,7 +14,7 @@ JavaScript: For interactive functionalities, such as displaying information dyna
 # CYK PARSER Website Screenshots
 
 ## Homepage
-![Homepage](landingpage.png.png)
+![Homepage](landingpage.png)
 
 ## Features Page
 ![Features Page](startpage.png)
