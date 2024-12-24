@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Cairo, sans-serif;
+}
+.page {
+    height: 100vh;
+}
+.perant {
+    width: 300px;
+    height: 00px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 120px);
+    box-shadow: inset 0.5px 0.5px 4px 1px #ccc;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: white;
+}
+.card {
+    width: 100%;
+    height: 270px;
+    background-color: #2196f3;
+    background-color: #0075ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border-radius: 10px;
+}
+p {
+    color: #777;
+}
+p , h2 {
+    margin: 5px 0;
+}
+.page::before {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    top: 45%;
+    left: 50%;
+    background-color: #2196f3;
+    background-color: #0075ff;
+    border-radius: 50%;
+    transform: translateX(-50%) skew(0, -10deg);
+    animation: wave 7s ease-in-out infinite alternate;
+    -webkit-animation: wave 7s ease-in-out infinite alternate;
+    z-index: -1;
+}
+@keyframes wave {
+    from {
+        transform: translateX(-50%) skew(0, -10deg);
+    }
+    to {
+        transform: translateX(-30%) skew(10deg, 0);
+        -webkit-transform: translateX(-30%) skew(10deg, 0);
+        -moz-transform: translateX(-30%) skew(10deg, 0);
+        -ms-transform: translateX(-30%) skew(10deg, 0);
+        -o-transform: translateX(-30%) skew(10deg, 0);
+}
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYK Parser</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CYK Parser</h1>
+        <div>
+            <label for="grammar">Enter Grammar(CFG Only):</label><br>
+            <textarea id="grammar" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="inputString">Enter Input String:</label><br>
+            <input type="text" id="inputString">
+        </div>
+        <button onclick="parseCYK()">Check Validity</button>
+        <div id="result"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
